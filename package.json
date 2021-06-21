@@ -1,0 +1,43 @@
+{
+  "name": "toy-expressjs",
+  "description": "for learning",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "framework",
+    "sinatra",
+    "web",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api"
+  ],
+  "main": "lib/index.js",
+  "types": "./types",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/node": "^15.12.4",
+    "mocha": "^9.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.3"
+  },
+  "engines": {
+    "node": ">= 14.17.1"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/",
+    "types/"
+  ],
+  "scripts": {
+    "build": "rimraf lib types && tsc",
+    "lint": "eslint .",
+    "test": "mocha test/app.listen.js"
+  }
+}
